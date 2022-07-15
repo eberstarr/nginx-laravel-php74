@@ -1,0 +1,7 @@
+docker run -id \
+           --name=[container_name] \
+           -p [host_port]:[container_port] \
+		   -v /[host_app_path]/app:/app \
+		   -v /[host_app_path]/logs:/logs \
+		   -v /[host_app_path]/temp:/temp \
+[image]:[tag] /bin/sh
